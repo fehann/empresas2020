@@ -1,0 +1,80 @@
+﻿Codigo,Natureza_Juridica,Representante_da_Entidade,Qualificacao
+1015,Órgão Público do Poder Executivo Federal ,Administrador ,05 
+1023,Órgão Público do Poder Executivo Estadual ou do Distrito Federal ,Administrador ,05 
+1031,Órgão Público do Poder Executivo Municipal ,Administrador ,05 
+1040,Órgão Público do Poder Legislativo Federal ,Administrador ,05 
+1058,Órgão Público do Poder Legislativo Estadual ou do Distrito Federal ,Administrador ,05 
+1066,Órgão Público do Poder Legislativo Municipal ,Administrador ,05 
+1074,Órgão Público do Poder Judiciário Federal ,Administrador ,05 
+1082,Órgão Público do Poder Judiciário Estadual ,Administrador ,05 
+1104,Autarquia Federal ,Administrador ou Presidente ,05 ou 16 
+1112,Autarquia Estadual ou do Distrito Federal ,Administrador ou Presidente ,05 ou 16 
+1120,Autarquia Municipal ,Administrador ou Presidente ,05 ou 16 
+1139,Fundação Pública de Direito Público Federal ,Presidente ,16 
+1147,Fundação Pública de Direito Público Estadual ou do Distrito Federal ,Presidente ,16 
+1155,Fundação Pública de Direito Público Municipal ,Presidente ,16 
+1163,Órgão Público Autônomo Federal ,Administrador ,05 
+1171,Órgão Público Autônomo Estadual ou do Distrito Federal ,Administrador ,05 
+1180,Órgão Público Autônomo Municipal ,Administrador ,05 
+1198,Comissão Polinacional ,Administrador ,05 
+1201,Fundo Público ,Administrador ,05 
+1210,Consórcio Público de Direito Público (Associação Pública) ,Presidente ,16 
+1228,Consórcio Público de Direito Privado ,Presidente ,16 
+1236,Estado ou Distrito Federal ,Administrador ,05 
+1244,Município ,Administrador ,05 
+1252,Fundação Pública de Direito Privado Federal ,"Administrador, Diretor, Presidente ou Fundador ","05, 10, 16 ou 54 "
+1260,Fundação Pública de Direito Privado Estadual ou do Distrito Federal ,"Administrador, Diretor, Presidente ou Fundador ","05, 10, 16 ou 54 "
+1279,Fundação Pública de Direito Privado Municipal ,"Administrador, Diretor, Presidente ou Fundador ","05, 10, 16 ou 54 "
+2011,Empresa Pública ,"Administrador, Diretor ou Presidente ","05, 10 ou 16 "
+2038,Sociedade de Economia Mista ,Diretor ou Presidente ,10 ou 16 
+2046,Sociedade Anônima Aberta ,"Administrador, Diretor ou Presidente ","05, 10 ou 16 "
+2054,Sociedade Anônima Fechada ,"Administrador, Diretor ou Presidente ","05, 10 ou 16 "
+2062,Sociedade Empresária Limitada ,Administrador ou Sócio-Administrador ,05 ou 49 
+2070,Sociedade Empresária em Nome Coletivo ,Sócio-Administrador ,49 
+2089,Sociedade Empresária em Comandita Simples ,Sócio Comanditado ,24 
+2097,Sociedade Empresária em Comandita por Ações ,Diretor ou Presidente ,10 ou 16 
+2127,Sociedade em Conta de Participação ,"Administrador, Procurador, Sócio Ostensivo ","05, 17 ou 31 "
+2135,Empresário Individual ,Empresário ,50 
+2143,Cooperativa ,Diretor ou Presidente ,10 ou 16 
+2151,Consórcio de Sociedades ,Administrador ,05 
+2160,Grupo de Sociedades ,Administrador ,05 
+2178,"Estabelecimento, no Brasil, de Sociedade Estrangeira ",Procurador ,17 
+2194,"Estabelecimento, no Brasil, de Empresa Binacional Argentino-Brasileira ",Procurador ,17 
+2216,Empresa Domiciliada no Exterior ,"Administrador, Procurador, Sócio-Administrador, Fundador/Instituidor ou Beneficiário Final ","05, 17, 49, 54 ou 69 "
+2224,Clube/Fundo de Investimento ,Responsável ,43 
+2232,Sociedade Simples Pura ,Administrador ou Sócio-Administrador ,05 ou 49 
+2240,Sociedade Simples Limitada ,Administrador ou Sócio-Administrador ,05 ou 49 
+2259,Sociedade Simples em Nome Coletivo ,Sócio-Administrador ,49 
+2267,Sociedade Simples em Comandita Simples ,Sócio Comanditado ,24 
+2275,Empresa Binacional ,Diretor ,10 
+2283,Consórcio de Empregadores ,Administrador ,05 
+2291,Consórcio Simples ,Administrador ,05 
+2305,Empresa Individual de Responsabilidade Limitada (de Natureza Empresária) ,"Administrador, Procurador ou Titular Pessoa Física Residente ou Domiciliado no Brasil. ","05, 17 ou 65 "
+2313,Empresa Individual de Responsabilidade Limitada (de Natureza Simples) ,"Administrador, Procurador ou Titular Pessoa Física Residente ou Domiciliado no Brasil. ","05, 17 ou 65 "
+2321,Sociedade Unipessoal de Advogados ,"Administrador, Procurador ou Titular Pessoa Física Residente ou Domiciliado no Brasil. ","05, 17 ou 65 "
+2330,Cooperativas de Consumo ,Diretor ou Presidente ,10 ou 16 
+3034,Serviço Notarial e Registral (Cartório) ,Tabelião ou Oficial de Registro ,32 ou 42 
+3069,Fundação Privada ,"Administrador, Diretor, Presidente, Fundador, Vice-Presidente, Secretário ou Tesoureiro ","05, 10, 16, 54, 77, 78 ou 79 "
+3077,Serviço Social Autônomo ,Administrador ,05 
+3085,Condomínio Edilício ,Administrador ou Síndico (Condomínio) ,05 ou 19 
+3107,Comissão de Conciliação Prévia ,Administrador ,05 
+3115,Entidade de Mediação e Arbitragem ,Administrador ,05 
+3131,Entidade Sindical ,"Administrador, Diretor, Presidente, Vice-Presidente, Secretário ou Tesoureiro ","05, 10, 16, 77, 78 e 79. "
+3204,"Estabelecimento, no Brasil, de Fundação ou Associação Estrangeiras ",Procurador ,17 
+3212,Fundação ou Associação Domiciliada no Exterior ,"Administrador, Procurador, Sócio-Administrador, Fundador/Instituidor ou Beneficiário Final. ","05, 17, 49, 54, ou 69 "
+3220,Organização Religiosa ,"Administrador, Diretor, Presidente, VicePresidente, Secretário ou Tesoureiro ","05, 10, 16, 77, 78 ou 79 "
+3239,Comunidade Indígena ,Responsável Indígena ,61 
+3247,Fundo Privado ,Administrador ,05 
+3255,Órgão de Direção Nacional de Partido Político ,Administrador ou Presidente ,05 ou 16 
+3263,Órgão de Direção Regional de Partido Político ,Administrador ou Presidente ,05 ou 16 
+3271,Órgão de Direção Local de Partido Político ,Administrador ou Presidente ,05 ou 16 
+3280,Comitê Financeiro de Partido Político ,Presidente ,16 
+3298,Frente Plebiscitária ou Referendária ,Presidente ,16 
+3301,Organização Social (OS) ,"Administrador, Diretor, Presidente, Fundador, Vice-Presidente, Secretário ou Tesoureiro ","05, 10, 16, 54, 77, 78 ou 79 "
+3999,Associação Privada ,"Administrador, Diretor, Presidente, VicePresidente, Secretário, Tesoureiro ","05, 10, 16, 77, 78 ou79 "
+4014,Empresa Individual Imobiliária ,Titular de Empresa Individual Imobiliária ,34 
+4090,Candidato a Cargo Político Eletivo ,Candidato a Cargo Político Eletivo ,51 
+4120,Produtor Rural (Pessoa Física) ,Produtor Rural ,59 
+5010,Organização Internacional ,Representante de Organização Internacional ,41 
+5029,Representação Diplomática Estrangeira ,"Diplomata, Cônsul, Ministro de Estado das Relações Exteriores ou Cônsul Honorário ","39, 40, 46 ou 60 "
+5037,Outras Instituições Extraterritoriais ,Representante da Instituição Extraterritorial ,62
