@@ -7,6 +7,8 @@ Análise de dados da Receita Federal do Brasil sobre empresas e sócios de empre
 empresas.csv e socios.csv - [https://brasil.io/dataset/socios-brasil/files/](https://brasil.io/dataset/socios-brasil/files/)
 Metadados: https://www.gov.br/receitafederal/dados/cnpj-metadados.pdf
 
+municipios.csv - https://basedosdados.org/dataset/br-bd-diretorios-brasil?bdm_table=municipio
+
 POP2022_Brasil_e_UFs.csv - [https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Brasil_e_UFs.xls](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Brasil_e_UFs.xls)
 
 POP2022_Municipios.csv - [https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.xls](https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.xls)
