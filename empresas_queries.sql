@@ -30,13 +30,28 @@ GROUP BY empresa.uf
 B AS(
 SELECT populacao_UF.cod_uf, populacao_UF.uf, A.total_empresas, A.total_socios, populacao_UF.populacao, CAST(A.total_socios AS REAL)/CAST(populacao_UF.populacao AS REAL) AS socios_per_capita 
 FROM A
-JOIN populacao_UF ON A.uf = populacao_UF.uf
+JOIN populacao_UF ON A.uf = populacao_UF.cod_uf
 )
 SELECT * FROM B
-UNION ALL SELECT 'Brasil', 'BR', sum(total_empresas), sum(total_socios), sum(populacao), (CAST(sum(total_socios) AS REAL)/CAST(sum(populacao) AS REAL)) FROM B
+UNION
+SELECT 'BR', 'Brasil', sum(total_empresas), sum(total_socios), sum(populacao), (CAST(sum(total_socios) AS REAL)/CAST(sum(populacao) AS REAL)) FROM B
 
 
-
+-- Sheet4: Top 10 Municipios com Maior Sócios per Capita por Estado
+WITH A AS (
+SELECT empresa.codigo_municipio, count(*) AS total_socios FROM empresa
+JOIN socio ON empresa.cnpj = socio.cnpj
+WHERE empresa.identificador_matriz_filial = 1 AND empresa.situacao_cadastral = 2
+GROUP BY empresa.codigo_municipio
+),
+B AS (
+SELECT populacao_municipios.uf, municipio.id_municipio, municipio.nome, A.total_socios, populacao_municipios.populacao, (CAST(A.total_socios AS REAL)/CAST(populacao_municipios.populacao AS REAL)) AS socios_per_capita FROM A
+JOIN municipio ON A.codigo_municipio = municipio.id_municipio_rf
+JOIN populacao_municipios ON municipio.id_municipio = populacao_municipios.cod_uf_municipio
+)
+SELECT * FROM (SELECT uf, id_municipio, nome, total_socios, populacao, socios_per_capita, rank() OVER(PARTITION BY uf ORDER BY socios_per_capita DESC) AS municipio_rank
+FROM B)
+WHERE municipio_rank <= 10
 
 
 -- Rascunhos
