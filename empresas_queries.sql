@@ -54,22 +54,35 @@ FROM B)
 WHERE municipio_rank <= 10
 
 
--- Rascunhos
--- Histograma capital social de empresas ativas
+-- Sheet5: 
 
-with bins as (
-	SELECT
-		CAST(empresa.capital_social/100000 as INT)*100000 as bin_floor,
-		count(empresa.cnpj) as bin_total
-	FROM empresa
-	WHERE empresa.identificador_matriz_filial = 1 AND empresa.situacao_cadastral = 2
-	GROUP BY 1
-	ORDER BY 1
+-- Ver número de observações acima do 3o quartil, porém ainda são muitos, em torno do 5 milhões para ativas e baixadas
+SELECT situacao_cadastral, count(*) AS total, count(*) * 0.75 AS q_three
+FROM empresa
+WHERE empresa.identificador_matriz_filial = 1 AND empresa.situacao_cadastral IN (2,8)
+GROUP BY situacao_cadastral
+
+-- Ver somente as 5 mil empresas mais antigas das ativas e baixadas
+WITH A AS (
+SELECT cnpj, situacao_cadastral, data_inicio_atividade,
+	CASE 
+		WHEN situacao_cadastral = 2 THEN '2020-09-20'
+		ELSE data_situacao_cadastral
+	END AS limite_atividade
+FROM empresa
+WHERE empresa.identificador_matriz_filial = 1 AND empresa.situacao_cadastral IN (2,8)
+),
+B AS (
+SELECT cnpj, situacao_cadastral, data_inicio_atividade, limite_atividade, (julianday(limite_atividade) - julianday(data_inicio_atividade))/365 AS duracao_anos
+FROM A
 )
+SELECT * FROM (SELECT cnpj, situacao_cadastral, data_inicio_atividade, limite_atividade, duracao_anos, row_number() OVER(PARTITION BY situacao_cadastral ORDER BY duracao_anos DESC) AS row_n
+FROM B)
+WHERE row_n <= 5000
 
-SELECT 
-	bin_floor,
-	bin_floor || ' - ' || (bin_floor + 100000) as bin_range,
-	bin_total
-FROM bins
-ORDER BY 1;
+-- Verificar as empresas anteriores a 1900
+SELECT * FROM empresa
+WHERE cnpj IN (116000120, 11461683000109, 1372826000144, 18825426000140, 96537196000127)
+-- Encontrado um erro na data de abertura da empresa, o restante está OK, realmente há 4 empresas abertas antes de 1900
+		
+	
