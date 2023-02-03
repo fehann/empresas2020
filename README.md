@@ -19,10 +19,9 @@ NATUREZA JURÍDICA.csv - [https://www.lefisc.com.br/news/novatabelanaturezajurid
 
 Utilizado DB Browser para criação do banco de dados em SQLite.
 
+empresas2020.db - banco de dados (muito grande para upload no Github)
 
-empresas2020.sqbpro - projeto
-
-empresas2020.db - banco de dados
+empresas2020 schema.pdf - schema do banco de dados
 
 empresas_queries.sql - queries
 
@@ -30,10 +29,11 @@ Empresas_queries.xlsx - resultados dos queries
 
 ## Visualização de dados
 
-Utilizado Tableau Public para criação das visualizações e disponibilização dos gráficos.
-
+Utilizado Tableau Public para criação das visualizações e disponibilização dos gráficos. Cada planilha no Tableau corresponde a aba no arquivo - 
+Empresas_queries.xlsx.
 
 empresas2020 - [https://public.tableau.com/app/profile/fernando.hannaka/viz/Empresas2020/Painel1](https://public.tableau.com/app/profile/fernando.hannaka/viz/Empresas2020/Painel1)
 
+##
 
-Projeto criado por [Fernando Hannaka](https://www.linkedin.com/in/fernandohannaka/).
+Projeto criado em 3 de fevereiro de 2023 por [Fernando Hannaka](https://www.linkedin.com/in/fernandohannaka/).
